@@ -1,5 +1,10 @@
 source "https://rubygems.org"
 
-gem "webrick", "~> 1.7"
-gem "jekyll", "~> 4.3"
-gem "jekyll-environment-variables"
+# This will help ensure the proper Jekyll version is running.
+gem "jekyll", github: "jekyll/jekyll"
+
+group :jekyll_plugins do
+  gem 'jekyll-paginate'
+  gem 'jekyll-sitemap'
+end
+

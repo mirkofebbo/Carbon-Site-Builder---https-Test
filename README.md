@@ -1,103 +1,77 @@
-# Jekyll Serif Theme
+# BlogBox
+BlogBox is a minimal, bold, responsive, and easy-to-use Jekyll theme. It’s a perfect fit for artists, photographers, or creative bloggers looking for a bold design theme.
 
-Serif is a modern business theme for Jekyll. It contains multiple content types for a typical brochure/marketing website. The theme is fully responsive, blazing fast and artfully illustrated.
+[Live Demo](https://blogbox.netlify.app/)
 
-[Live Demo](https://jekyll-serif.netlify.app/) |
-[Zerostatic Themes](https://www.zerostatic.io)
+# Premium Jekyll Themes
 
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+You can find our premium Jekyll themes here -> [jekyllthemes.io](https://jekyllthemes.io/developers/just-good-themes)
 
-![Jekyll Serif Theme screenshot](https://www.zerostatic.io/theme/jekyll-serif/jekyll-serif-screenshot.png)
+## Preview
 
-### Theme features
+[![Blogbox preview](/blogbox_preview.jpeg "Blogbox preview")](https://blogbox.netlify.app/)
 
-- Jekyll 4.2+
-- Netlify & Github Pages ready
-- Services (Collection)
-- Team (Collection)
-- Features (Data)
-- SCSS
-- 100% Responsive design, animated hamburger and mobile slide in menu
-- Bootstrap 4.6 - _Only the bootstrap grid and utilites are imported by default. If you want to use more of the Boostrap library you can uncomment the `@import` in `style.scss`_
-- 100/100 Google Lighthouse speed score
-- 100/100 Google Lighthouse seo score
-- 100/100 Google Lighthouse accessibility score
-- 100/100 Google Lighthouse best practices score
-- Under 50KB without images or 80KB with images and illustrations ⚡
-- Under 20KB without Google fonts ⚡⚡⚡
-- Robust example content included
-- Royalty free illustrations included
+## Theme features
 
-## Installation
++ Responsive layout – your blog will be accessible on various devices (iPhone, iPad, Android, etc.)
++ Clean, well commented code, easy to customize
++ Optional fixed navigation
++ Author information
++ Tag page support
++ Code syntax highlighter
++ Newsletter, latest posts and tag cloud widgets
++ Sharing post integration
++ Social media icons
 
-### Installing Ruby & Jekyll
+## Local Installation
+> How to install and use the theme
 
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
+_Note: this theme cannot be installed as a gem in your Gemfile and config, therefore the only way to use this theme is to clone the entire repo and put your content in it among the styling._
 
-### Installing Theme
+Install Jekyll as per [Jekyll docs](https://jekyllrb.com/docs/).
 
-Download or clone the theme.
+Clone the repo or your fork.
 
-To run the theme locally, navigate to the theme directory and run:
+Navigate to the repo.
 
-```
-bundle install
+Install the dependencies:
+
+```sh
+$ bundle config set --local path vendor/bundle
+$ bundle install
 ```
 
-To start the Jekyll local development server.
+Start a dev server, with verbose error traces:
 
-```
-bundle exec jekyll serve
+```sh
+$ bundle exec jekyll serve --trace
 ```
 
-To build the theme.
+## Development
+> How to set up and run the theme as a standalone site locally
 
-```
-bundle exec jekyll build
-```
+Follow the steps in the section above.
 
 ## Deployment
 
+Please see the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on the Jekyll website.
+
+### Manual Deployment
+
+Jekyll outputs your static site to the `_site`. directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live. This can be tedious, so some automated deploy approaches are listed below.
+
 ### Netlify
 
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
+This theme is prepared to be hosted on [Netlify](https://www.netlify.com/). All you need to do is create a new public or private repository on GitHub or GitLab. Upload the theme to the repository and link your repo to Netlify. Please check this [blog post](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#step-2-link-to-your-github) for step-by-step guidelines.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-serif-theme)
+### Amazon S3
 
-### Github Pages
+If you want to host your site on Amazon S3, you can do so by using the [s3_website application](https://github.com/laurilehmijoki/s3_website). It will push your site to Amazon S3, where it can be served like any web server, dynamically scaling to almost unlimited traffic. Well, S3 itself is not built for speed so you probably want to put some CDN like CloudFront on top of your S3 objects.
 
-This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
+### GitHub Pages
 
-For example the site https://zerostaticthemes.github.io/jekyll-serif-theme would have `baseurl: "/jekyll-serif-theme/"`
+See the [GitHub Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) deploy guide on Jekyll docs to build with GitHub Actions and host with GitHub Pages.
 
-## Extras
+## License
 
-### License
-
-- You cannot create ports of this theme
-- You cannot re-sell this theme
-
-### Credits
-
-- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
-
-## Support My Work
-
-I've been building open source themes for all the main static site generators for over 4 years now. My premium themes allow me to continue to allocate time to maintain, improve and build new open source themes.
-
-1. Leave a star ⭐🙏🏻
-2. Make a contribution to this theme, add a feature, fix a bug, nothing is to small 
-2. Mention this theme on twitter [@zerostaticio](https://twitter.com/zerostaticio) 📢
-3. Purchase a premium theme 🔥
-
-### All Jekyll Themes by Zerostatic
-
-- [Jekyll Serif (Open Source)](https://www.zerostatic.io/theme/jekyll-serif/)
-- [Jekyll Atlantic (Open Source)](https://www.zerostatic.io/theme/jekyll-atlantic/)
-- [Jekyll Advance (Premium)](https://www.zerostatic.io/theme/jekyll-advance/)
-- [Jekyll Origin (Premium)](https://www.zerostatic.io/theme/jekyll-origin/)
-- [Jekyll Curate (Premium)](https://www.zerostatic.io/theme/jekyll-curate/)
-
-🇦🇺 **Made in Australia** by Robert Austin
+Licensed under [MIT](/LICENSE).
