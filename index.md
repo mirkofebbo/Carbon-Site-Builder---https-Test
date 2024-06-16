@@ -2,9 +2,9 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be ** UPDATE**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](../page/test.md).
+[WTF](../page/test.md).
 
 There should be whitespace between paragraphs.
 
