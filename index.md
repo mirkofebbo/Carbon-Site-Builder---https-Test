@@ -4,7 +4,7 @@ layout: default
 
 Text can be ** UPDATE**, _italic_, or ~~strikethrough~~.
 
-[WTF](../page/test.md).
+[WTF](/page/test.md).
 
 There should be whitespace between paragraphs.
 
