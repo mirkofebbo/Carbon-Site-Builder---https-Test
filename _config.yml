@@ -30,13 +30,13 @@ sass:
 # Site navigation - each item must have a title and a url.
 navigation:
 - text: Home
-  url: /
+  url: /Carbon-Site-Builder---https-Test/
 - text: About
-  url: /about/
+  url: /Carbon-Site-Builder---https-Test/about
 - text: Style Guide
-  url: /style-guide/
+  url: /Carbon-Site-Builder---https-Test/style-guide/
 - text: Archives
-  url: /tags/
+  url: tags/
 
 # Author information - author info at the bottom of the post
 author_name: "John Doe"
