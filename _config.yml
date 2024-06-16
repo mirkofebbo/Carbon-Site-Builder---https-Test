@@ -37,6 +37,8 @@ navigation:
   url: /Carbon-Site-Builder---https-Test/style-guide
 - text: Archives
   url: /Carbon-Site-Builder---https-Test/tags/
+- text: Test
+  url: /Carbon-Site-Builder---https-Test/page/test
 
 # Author information - author info at the bottom of the post
 author_name: "Mereko Febbi"
