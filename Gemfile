@@ -1,10 +1,7 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
+gemspec
 
-# This will help ensure the proper Jekyll version is running.
-gem "jekyll", github: "jekyll/jekyll"
-
-group :jekyll_plugins do
-  gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
-end
-
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
