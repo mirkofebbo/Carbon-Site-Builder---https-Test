@@ -16,8 +16,8 @@ color: "#13ccf9"
 #   shortname: example-com
 #
 # rrss:
-  discord: hoola
-  facebook: hola
+  discord: http://localhost:5173/
+  facebook: http://localhost:5173/
   # twitter: Hola
   # instagram: Hola
   # linkedin: Hola
