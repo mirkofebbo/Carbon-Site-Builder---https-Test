@@ -1,37 +1,41 @@
-<footer class="site-footer">
-    <div class="inner">
-        <div class="social-links">
-            {% if site.twitter_username %}
-            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span></a>
-            {% endif %}
-            {% if site.facebook_username %}
-            <a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
-            {% endif %}
-            {% if site.linkedin_username %}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" ><i class="fa fa-linkedin" aria-hidden="true"></i><span class="screen-reader-text">LinkedIn</span></a>
-            {% endif %}
-            {% if site.github_username %}
-            <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github" aria-hidden="true"></i><span class="screen-reader-text">GitHub</span></a>
-            {% endif %}
-            {% if site.codepen_username %}
-            <a href="https://codepen.io/{{ site.codepen_username }}"><i class="fa fa-codepen" aria-hidden="true"></i><span class="screen-reader-text">Codepen</span></a>
-            {% endif %}
-            {% if site.dribbble_username %}
-            <a href="https://dribbble.com/{{ site.dribbble_username }}"><i class="fa fa-dribbble" aria-hidden="true"></i><span class="screen-reader-text">Dribbble</span></a>
-            {% endif %}
-            {% if site.medium_username %}
-            <a href="https://medium.com/{{ site.medium_username }}"><i class="fa fa-medium" aria-hidden="true"></i><span class="screen-reader-text">Medium</span></a>
-            {% endif %}
-            {% if site.instagram_username %}
-            <a href="https://www.instagram.com/{{ site.instagram_username }}" ><i class="fa fa-instagram" aria-hidden="true"></i><span class="screen-reader-text">Instagram</span></a>
-            {% endif %}
-            {% if site.pinterest_username %}
-            <a href="https://www.pinterest.com/{{ site.pinterest_username }}"><i class="fa fa-pinterest" aria-hidden="true"></i><span class="screen-reader-text">Pinterest</span></a>
-            {% endif %}
-        </div><!-- .social-links -->
-        <div class="copyright">
-            &copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">{{site.title}}</a> <br />BlogBox theme by <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes</a>
-        </div><!-- .copyright -->
-        <a href="#page" id="top-link" class="top-link"><i class="fa fa-chevron-up" aria-hidden="true"></i><span class="screen-reader-text">Back to the top</span></a>
-    </div><!-- .inner -->
-</footer><!-- .site-footer -->
+{% capture currentYear %}{{ 'now' | date: '%Y' }}{% endcapture %}
+
+<footer class="relative pt-24 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold">{{ site.data[site.lang].footer.title | default: "Let's keep in touch!" |
+          localize}}</h4>
+        <span class="text-lg dark:text-slate-300 my-4">
+          {{ site.data[site.lang].footer.description | default: "Find us on any of these platforms." }}
+        </span>
+        {% include social.html %}
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap text-right mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-slate-800 dark:text-slate-200 font-semibold mb-2">{{
+              site.data[site.lang].footer.pages | default: "Pages" }}</span>
+            <ul>
+              {% for page in site.pages %}
+              <li>
+                <a class="text-slate-600 hover:text-slate-800 dark:text-slate-300 dark:hover:text-slate-200 "
+                  href="{{ page.url }}">{{ page.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-gray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">{{currentYear}}</span><a href="{{ site.url }}" class="text-gray-500 hover:text-gray-800
+            dark:text-slate-500 dark:hover:text-slate-200" target="_blank"> {{site.title}}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
