@@ -1,27 +1,19 @@
-domain: example.com
-url: https://example.com
+# Site Build Settings
 
-title: Mirko
-email: wind@example.com
-author: Wind Sample
+# jekyll-paginate configuration
+paginate:            5
 
-lang: en
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           /:title
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-plugins:
-  - jekyll-seo-tag
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           "Millennial"
+description:	       "a minimalist Jekyll theme for running a blog or publication"
+author:              "Paul Le"
 
-color: "#13ccf9" 
-
-# disqus:
-#   shortname: example-com
-#
-rrss:
-  discord: hoola
-  facebook: hola
-  # twitter: Hola
-  # instagram: Hola
-  # linkedin: Hola
-  # pinterest: hola
-  # whatsapp: 123
-  # telegram: 123
-  # email: email
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml
